@@ -19,11 +19,22 @@ function createBoxes(boxmultiplier, container) {
   }
 }
 
+function getInput() {
+  let userInput = prompt('Enter between 1-100', '100');
+  //Recursion
+  if(userInput > 100) {
+    return getInput();
+  }
+  else {
+    return userInput || 100;
+  }
+}
+
 //Create initial boxes 100 by 100
 createBoxes(100, container);
 
 //Determine resolution/ get from user
 reso_btn.addEventListener('click', (e) => {
-  let boxmultiplier = prompt('Range of 1-100');
+  boxmultiplier = getInput();
   createBoxes(boxmultiplier, container);
 });
