@@ -48,3 +48,10 @@ body, html {
   width: 700px;
   background-color: antiquewhite;
 }
+
+.clr_btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 700px;
+  background-color: aquamarine;
+}

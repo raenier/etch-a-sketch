@@ -1,5 +1,6 @@
 const container = document.querySelector('.sketch-board');
 const reso_btn = document.querySelector('.reso_btn');
+const clr_btn = document.querySelector('.clr_btn');
 
 //Function for creating the boxes
 function createBoxes(boxmultiplier, container) {
@@ -37,4 +38,8 @@ createBoxes(100, container);
 reso_btn.addEventListener('click', (e) => {
   boxmultiplier = getInput();
   createBoxes(boxmultiplier, container);
+});
+
+clr_btn.addEventListener('click', (e) => {
+  window.location.reload();
 });
