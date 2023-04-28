@@ -13,7 +13,8 @@ function createBoxes(boxmultiplier, container) {
   const boxes = document.querySelectorAll('.box');
   for(box of boxes) {
     box.addEventListener('mouseover', (e) => {
-      e.target.style.background = 'black';
+      let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+      e.target.style.background = randomColor;
     });
     box.style.flexBasis = `calc(100% / ${boxmultiplier})`;
     box.style.paddingBottom = `calc(100% / ${boxmultiplier})`;
