@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.sketch-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 700px;
+  max-width: 700px;
+  height: auto;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.box {
+  flex-basis: calc(100% / 64);
+  height: 0;
+  padding-bottom: calc(100% / 64);
+}
+
+.flex {
+  display: flex;
+}
