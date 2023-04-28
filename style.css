@@ -17,6 +17,7 @@ body, html {
   height: auto;
   border: 1px solid black;
   margin: auto;
+  border-radius: 5px;
 }
 
 .box {
@@ -27,4 +28,23 @@ body, html {
 
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.reso_btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 700px;
+  background-color: antiquewhite;
 }
